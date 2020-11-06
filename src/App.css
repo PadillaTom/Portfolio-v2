@@ -168,7 +168,7 @@ Homepage
 .home-cta {
   position: absolute;
   top: 20%;
-  right: 10%;
+  right: 6%;
   z-index: 10;
 }
 .cta-elements-container {
@@ -264,7 +264,7 @@ Projects
   margin: 0rem auto;
   margin-top: 20rem;
   margin-bottom: 25rem;
-  margin-left: 4rem;
+  margin-left: 5.5rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   place-items: center;

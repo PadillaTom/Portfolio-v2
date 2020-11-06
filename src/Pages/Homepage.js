@@ -7,6 +7,7 @@ import bg1 from '../Assets/bg1.jpg';
 const Homepage = () => {
   const tl = gsap.timeline();
   gsap.registerPlugin(ScrollTrigger);
+
   useEffect(() => {
     // :::::::::::: Animations ::::::::::::::::
 
