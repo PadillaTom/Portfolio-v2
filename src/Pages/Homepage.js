@@ -40,11 +40,11 @@ const Homepage = () => {
         delay: 0.3,
         ease: 'Bounce.easeOut',
       })
-      .to('.cta-elements-container', 0.5, {
-        y: 450,
+      .to('.cta-elements-container', 2, {
+        y: 436.5,
         scrollTrigger: {
           trigger: '.cta-elements-container',
-          scrub: 2.5,
+          scrub: 5,
           start: 'top top+=95',
           end: 'top top-=5000',
           pin: true,

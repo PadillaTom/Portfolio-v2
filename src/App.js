@@ -4,6 +4,7 @@ import gsap from 'gsap';
 // Components:
 import Navigation from './Components/Navigation';
 import Projects from './Components/Projects';
+import Footer from './Components/Footer';
 // Pages:
 import Homepage from './Pages/Homepage';
 
@@ -18,6 +19,7 @@ function App() {
       <Navigation></Navigation>
       <Homepage></Homepage>
       <Projects></Projects>
+      <Footer></Footer>
     </div>
   );
 }
