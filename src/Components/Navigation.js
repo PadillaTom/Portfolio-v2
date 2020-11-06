@@ -1,6 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 const Navigation = () => {
+  const tl = gsap.timeline();
+  gsap.registerPlugin(ScrollTrigger);
+  useEffect(() => {
+    tl.from('.desktop-link', 1, {
+      delay: 1.5,
+      x: -500,
+      stagger: 0.2,
+      ease: 'Power4.Out',
+    });
+  }, []);
   return (
     <React.Fragment>
       {/* DESKTOP NAV */}
