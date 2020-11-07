@@ -9,6 +9,7 @@ import Footer from './Components/Footer';
 // Pages:
 import Homepage from './Pages/Homepage';
 import AboutPage from './Pages/AboutPage';
+import ContactPage from './Pages/ContactPage';
 
 function App() {
   useEffect(() => {
@@ -26,6 +27,9 @@ function App() {
           </Route>
           <Route path='/about'>
             <AboutPage></AboutPage>
+          </Route>
+          <Route path='/contact'>
+            <ContactPage></ContactPage>
           </Route>
         </Switch>
         <Footer></Footer>

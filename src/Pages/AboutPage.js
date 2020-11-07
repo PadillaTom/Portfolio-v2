@@ -23,10 +23,9 @@ const AboutPage = () => {
         1.4
       )
       .from('.about-cta', 1, {
-        delay: 0,
         opacity: 0,
-        y: 10,
-        ease: 'circ.out',
+        y: -25,
+        ease: 'Power4.easeOut',
       });
   }, []);
 
