@@ -6,7 +6,6 @@ import gsap from 'gsap';
 import Navigation from './Components/Navigation';
 import Footer from './Components/Footer';
 import ScrollToTop from './Components/ScrollToTop';
-
 // Pages:
 import Homepage from './Pages/Homepage';
 import AboutPage from './Pages/AboutPage';

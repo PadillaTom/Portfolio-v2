@@ -1,14 +1,15 @@
 import React, { useEffect } from 'react';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
 // Images:
 import bg1 from '../Assets/bg1.jpg';
 // Components:
 import Projects from '../Components/Projects';
+// Animations:
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
 
-const Homepage = () => {
+const Homepage = (projRef) => {
   const tl = gsap.timeline();
-  gsap.registerPlugin(ScrollTrigger);
 
   useEffect(() => {
     // :::::::::::: Animations ::::::::::::::::
@@ -53,7 +54,8 @@ const Homepage = () => {
           end: 'top top-=5000',
         },
       });
-  }, []);
+  }, [tl]);
+
   return (
     <React.Fragment>
       <div className='section home-sect'>
@@ -76,7 +78,7 @@ const Homepage = () => {
           </div>
         </a>
       </div>
-      <Projects></Projects>
+      <Projects ref={projRef}></Projects>
     </React.Fragment>
   );
 };
