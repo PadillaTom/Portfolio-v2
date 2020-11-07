@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import './App.css';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import gsap from 'gsap';
 // Components:
 import Navigation from './Components/Navigation';
@@ -7,6 +8,7 @@ import Projects from './Components/Projects';
 import Footer from './Components/Footer';
 // Pages:
 import Homepage from './Pages/Homepage';
+import AboutPage from './Pages/AboutPage';
 
 function App() {
   useEffect(() => {
@@ -16,10 +18,18 @@ function App() {
   // ::::::::::::::: Main :::::::::::::::::
   return (
     <div className='App'>
-      <Navigation></Navigation>
-      <Homepage></Homepage>
-      <Projects></Projects>
-      <Footer></Footer>
+      <Router>
+        <Navigation></Navigation>
+        <Switch>
+          <Route path='/' exact>
+            <Homepage></Homepage>
+          </Route>
+          <Route path='/about'>
+            <AboutPage></AboutPage>
+          </Route>
+        </Switch>
+        <Footer></Footer>
+      </Router>
     </div>
   );
 }

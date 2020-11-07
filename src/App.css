@@ -232,7 +232,7 @@ Navigation
   padding: 0.3rem 0rem;
   letter-spacing: 1.7px;
   font-family: var(--TextsFont);
-  font-size: 1rem;
+  font-size: 0.9rem;
   text-transform: uppercase;
   color: var(--GrayColor);
   cursor: pointer;
@@ -243,6 +243,16 @@ Navigation
   letter-spacing: 2.3px;
   padding-left: 1rem;
   transform: scale(1.02);
+}
+.desktop-link-home {
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: black;
+  font-size: 0.9rem;
+  transition: var(--MainTransition);
+}
+.desktop-link-home:hover {
+  color: crimson;
 }
 
 /* :::: :: End Navigation ::::::::  */
@@ -346,7 +356,7 @@ Footer
   width: 100%;
 }
 .footer-top {
-  height: 7rem;
+  height: 10rem;
   width: 100%;
   background: rgb(235, 235, 235);
   position: relative;
@@ -389,7 +399,6 @@ Footer
   margin-left: 1rem;
   letter-spacing: 1.5px;
 }
-
 .footer-bot {
   height: 2rem;
   background: var(--BgColor);
@@ -407,15 +416,95 @@ Footer
   padding: 1rem;
   color: var(--FontGrayColor);
 }
+/* :::: :: End Footer ::::::::  */
 
-/* :::: :: End Homepage ::::::::  */
 /*
 ::::::::::::::::::::::::::::::::::::::    
-Homepage
+About
 :::::::::::::::::::::::::::::::::::::::
 */
+.about-sect {
+  min-height: 100vh;
+  width: 100%;
+}
+.about-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.about-img {
+  height: 38vh;
+  width: 100%;
+  background-color: var(--BgColor);
+}
+.about-info-container {
+  position: relative;
+  background: white;
+  height: 80vh;
+  width: 100%;
+}
+/* Title */
+.about-title {
+  position: absolute;
+  font-size: 10rem;
+  white-space: nowrap;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  font-family: var(--CtaFonts);
+  font-weight: 400;
+  top: 3%;
+  left: 2%;
+  color: var(--CtaColor);
+  opacity: 0.1;
+}
+/* Info */
+.about-info {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: var(--MainFont);
+  letter-spacing: 1.7px;
+}
+.about-info span {
+  color: crimson;
+  font-family: var(--TitleFont);
+  font-size: 1.4rem;
+}
+.proj-cta {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: crimson;
+  font-family: var(--TitleFont);
+  font-size: 1.4rem;
+  margin-left: 0.7rem;
+  cursor: pointer;
+}
+.about-cta {
+  position: absolute;
+  left: 50%;
+  bottom: 11%;
+  transform: translateX(-50%);
+  border: 2px solid black;
+  background: transparent;
+  padding: 0.8rem 2rem;
+  cursor: pointer;
+  transition: var(--MainTransition);
+  font-family: var(--TitleFont);
+  letter-spacing: 2px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: black;
+}
+.about-cta:hover {
+  color: white;
+  background: black;
+}
+/* :::: :: End About ::::::::  */
 
-/* :::: :: End Homepage ::::::::  */
 /*
 ::::::::::::::::::::::::::::::::::::::    
 Homepage

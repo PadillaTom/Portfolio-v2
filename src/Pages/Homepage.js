@@ -3,6 +3,8 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 // Images:
 import bg1 from '../Assets/bg1.jpg';
+// Components:
+import Projects from '../Components/Projects';
 
 const Homepage = () => {
   const tl = gsap.timeline();
@@ -41,14 +43,14 @@ const Homepage = () => {
         delay: 0.3,
         ease: 'Bounce.easeOut',
       })
-      .to('.cta-elements-container', 2, {
-        y: 436.5,
+      .to('.cta-elements-container', {
+        y: 405,
         scrollTrigger: {
           trigger: '.cta-elements-container',
-          scrub: 5,
+          pin: true,
+          scrub: 3,
           start: 'top top+=95',
           end: 'top top-=5000',
-          pin: true,
         },
       });
   }, []);
@@ -72,6 +74,7 @@ const Homepage = () => {
           </div>
         </div>
       </div>
+      <Projects></Projects>
     </React.Fragment>
   );
 };

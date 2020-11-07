@@ -1,10 +1,11 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
+// Animations:
 import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import Homepage from '../Pages/Homepage';
 
 const Navigation = () => {
   const tl = gsap.timeline();
-  gsap.registerPlugin(ScrollTrigger);
   useEffect(() => {
     tl.from('.desktop-link', 1, {
       delay: 1.5,
@@ -19,13 +20,23 @@ const Navigation = () => {
       <nav className='desktop-nav'>
         <ul className='desktop-links'>
           <li className='desktop-link'>
+            <Link to='/'>
+              <p className='desktop-link-home'>Home</p>
+            </Link>
+          </li>
+          <li className='desktop-link'>
+            <Link to='/about'>
+              <p>About</p>
+            </Link>
+          </li>
+          <li className='desktop-link'>
             <p>Projects</p>
           </li>
+
           <li className='desktop-link'>
-            <p>About</p>
-          </li>
-          <li className='desktop-link'>
-            <p>Contact</p>
+            <Link to='/contact'>
+              <p>Contact</p>
+            </Link>
           </li>
         </ul>
       </nav>
