@@ -28,7 +28,7 @@ const AboutPage = () => {
         y: -25,
         ease: 'Power4.easeOut',
       });
-  }, []);
+  }, [tl]);
 
   return (
     <React.Fragment>
