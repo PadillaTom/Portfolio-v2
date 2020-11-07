@@ -64,7 +64,7 @@ const ContactPage = () => {
         y: -25,
         ease: 'Power4.easeOut',
       });
-  }, []);
+  }, [tl]);
   return (
     <React.Fragment>
       <section className='section cont-sect'>
@@ -77,7 +77,11 @@ const ContactPage = () => {
             <div className='info-container'>
               <div className='contact-info'>
                 {/* Github */}
-                <a href='https://github.com/PadillaTom' target='_blank'>
+                <a
+                  href='https://github.com/PadillaTom'
+                  rel='noreferrer'
+                  target='_blank'
+                >
                   <div className='single-info'>
                     <AiFillGithub></AiFillGithub>
                     <p>GitHub</p>
@@ -87,6 +91,7 @@ const ContactPage = () => {
                 <a
                   href='https://www.linkedin.com/in/padillatom/'
                   target='_blank'
+                  rel='noreferrer'
                 >
                   <div className='single-info'>
                     <AiFillLinkedin></AiFillLinkedin>
