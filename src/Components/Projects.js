@@ -152,7 +152,7 @@ const Projects = () => {
             </div>
           </div>
         </div>
-        {/* End RTS */}
+        {/* End Flix Tribute */}
       </section>
     </React.Fragment>
   );

@@ -8,8 +8,10 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
-const Homepage = (projRef) => {
+const Homepage = (projComp) => {
   const tl = gsap.timeline();
+  const projRef = React.useRef(null);
+  console.log(projRef);
 
   useEffect(() => {
     // :::::::::::: Animations ::::::::::::::::
@@ -78,7 +80,7 @@ const Homepage = (projRef) => {
           </div>
         </a>
       </div>
-      <Projects ref={projRef}></Projects>
+      <Projects></Projects>
     </React.Fragment>
   );
 };

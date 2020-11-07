@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 // Animations:
 import gsap from 'gsap';
 
-const Navigation = (scrollToProj, projRef) => {
+const Navigation = () => {
   const tl = gsap.timeline();
   const [replay, setReplay] = useState(false);
   // Scrolls:
@@ -41,10 +41,11 @@ const Navigation = (scrollToProj, projRef) => {
             className='desktop-link'
             onClick={() => {
               setReplay(!replay);
-              scrollToProj(projRef);
             }}
           >
-            <p>Projects</p>
+            <Link to='/projects'>
+              <p>Projects</p>
+            </Link>
           </li>
         </ul>
       </nav>
