@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import gsap from 'gsap';
 
 const AboutPage = () => {
@@ -22,7 +23,7 @@ const AboutPage = () => {
         },
         1.4
       )
-      .from('.about-cta', 1, {
+      .from('.about-cta', 0.7, {
         opacity: 0,
         y: -25,
         ease: 'Power4.easeOut',
@@ -61,7 +62,9 @@ const AboutPage = () => {
               </p>
             </div>
             <div className='about-cta'>
-              <p>Contact Me</p>
+              <Link to='/contact'>
+                <p>Contact Me</p>
+              </Link>
             </div>
           </div>
         </div>

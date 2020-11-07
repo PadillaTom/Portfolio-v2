@@ -4,8 +4,9 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import gsap from 'gsap';
 // Components:
 import Navigation from './Components/Navigation';
-import Projects from './Components/Projects';
 import Footer from './Components/Footer';
+import ScrollToTop from './Components/ScrollToTop';
+
 // Pages:
 import Homepage from './Pages/Homepage';
 import AboutPage from './Pages/AboutPage';
@@ -20,6 +21,7 @@ function App() {
   return (
     <div className='App'>
       <Router>
+        <ScrollToTop></ScrollToTop>
         <Navigation></Navigation>
         <Switch>
           <Route path='/' exact>
@@ -32,6 +34,7 @@ function App() {
             <ContactPage></ContactPage>
           </Route>
         </Switch>
+
         <Footer></Footer>
       </Router>
     </div>

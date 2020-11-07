@@ -67,12 +67,14 @@ const Homepage = () => {
           <h2>Web Developer</h2>
           <p>Tomas Padilla</p>
         </div>
-        <div className='home-cta'>
-          <div className='cta-elements-container'>
-            <div className='cta-circle'></div>
-            <h4 className='cta-text'>Get in Touch!</h4>
+        <a href='mailto:padillatomasagustin@gmail.com'>
+          <div className='home-cta'>
+            <div className='cta-elements-container'>
+              <div className='cta-circle'></div>
+              <h4 className='cta-text'>Get in Touch!</h4>
+            </div>
           </div>
-        </div>
+        </a>
       </div>
       <Projects></Projects>
     </React.Fragment>

@@ -58,7 +58,12 @@ const ContactPage = () => {
           ease: 'Power4.easeOut',
         },
         1.4
-      );
+      )
+      .from('.form-submit', 0.7, {
+        opacity: 0,
+        y: -25,
+        ease: 'Power4.easeOut',
+      });
   }, []);
   return (
     <React.Fragment>
@@ -71,22 +76,37 @@ const ContactPage = () => {
           <div className='cont-info-container'>
             <div className='info-container'>
               <div className='contact-info'>
-                <div className='single-info'>
-                  <AiFillGithub></AiFillGithub>
-                  <p>GitHub</p>
-                </div>
-                <div className='single-info'>
-                  <AiFillLinkedin></AiFillLinkedin>
-                  <p>Linkedin</p>
-                </div>
-                <div className='single-info'>
-                  <AiOutlineMail></AiOutlineMail>
-                  <p>padillatomasagustin@gmail.com</p>
-                </div>
-                <div className='single-info'>
-                  <AiFillPhone></AiFillPhone>
-                  <p>+41 79 400 26 93</p>
-                </div>
+                {/* Github */}
+                <a href='https://github.com/PadillaTom' target='_blank'>
+                  <div className='single-info'>
+                    <AiFillGithub></AiFillGithub>
+                    <p>GitHub</p>
+                  </div>
+                </a>
+                {/* Linkedin */}
+                <a
+                  href='https://www.linkedin.com/in/padillatom/'
+                  target='_blank'
+                >
+                  <div className='single-info'>
+                    <AiFillLinkedin></AiFillLinkedin>
+                    <p>Linkedin</p>
+                  </div>
+                </a>
+                {/* Email */}
+                <a href='mailto: padillatomasagustin@gmail.com'>
+                  <div className='single-info'>
+                    <AiOutlineMail></AiOutlineMail>
+                    <p>padillatomasagustin@gmail.com</p>
+                  </div>
+                </a>
+                {/* Phone */}
+                <a href='tel:+41794002693'>
+                  <div className='single-info'>
+                    <AiFillPhone></AiFillPhone>
+                    <p>+41 79 400 26 93</p>
+                  </div>
+                </a>
               </div>
               <h4 className='say-something'>Say something!</h4>
               <div className='contact-form-container'>

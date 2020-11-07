@@ -12,13 +12,19 @@ const Footer = () => {
               <h2>Let's work together!</h2>
             </div>
             <div className='contact-social'>
-              <AiFillGithub></AiFillGithub>
-              <AiFillLinkedin></AiFillLinkedin>
+              <a href='https://github.com/PadillaTom' target='_blank'>
+                <AiFillGithub></AiFillGithub>
+              </a>
+              <a href='https://www.linkedin.com/in/padillatom/' target='_blank'>
+                <AiFillLinkedin></AiFillLinkedin>
+              </a>
             </div>
-            <div className='social-phone'>
-              <AiFillPhone></AiFillPhone>
-              <p>+41 79 400 26 93</p>
-            </div>
+            <a href='tel:+41794002693'>
+              <div className='social-phone'>
+                <AiFillPhone></AiFillPhone>
+                <p>+41 79 400 26 93</p>
+              </div>
+            </a>
           </div>
         </div>
         <div className='footer-bot'>

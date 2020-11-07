@@ -30,13 +30,12 @@ const Navigation = () => {
             </Link>
           </li>
           <li className='desktop-link'>
-            <p>Projects</p>
-          </li>
-
-          <li className='desktop-link'>
             <Link to='/contact'>
               <p>Contact</p>
             </Link>
+          </li>
+          <li className='desktop-link'>
+            <p>Projects</p>
           </li>
         </ul>
       </nav>
