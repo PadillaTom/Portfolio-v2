@@ -826,7 +826,7 @@ Projects Page
 :::::::::::::::::::::::::::::::::::::::
 */
 .projPage-sect {
-  min-height: 80vh;
+  min-height: 85vh;
   max-width: 100vw;
 }
 .projPage-container {
@@ -871,6 +871,7 @@ Projects Page
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
 }
 .single-pp-container {
