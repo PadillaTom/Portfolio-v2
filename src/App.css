@@ -352,7 +352,7 @@ About
   position: relative;
   background: white;
   width: 100%;
-  min-height: 65vh;
+  min-height: 82vh;
   box-shadow: 0px 0 12px rgba(0, 0, 0, 0.15);
   border-top-left-radius: 1.3rem;
   border-top-right-radius: 1.3rem;
@@ -368,7 +368,7 @@ About
   text-transform: uppercase;
   font-family: var(--CtaFonts);
   font-weight: 400;
-  top: 9%;
+  top: 8.5%;
   left: 50%;
   transform: translateX(-50%);
   color: var(--CtaColor);
