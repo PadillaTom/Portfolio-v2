@@ -369,7 +369,8 @@ About
   font-family: var(--CtaFonts);
   font-weight: 400;
   top: 9%;
-  left: 1%;
+  left: 50%;
+  transform: translateX(-50%);
   color: var(--CtaColor);
   opacity: 0.1;
 }
@@ -498,7 +499,8 @@ Contact
   font-family: var(--CtaFonts);
   font-weight: 400;
   top: 8%;
-  left: 2.2%;
+  left: 50%;
+  transform: translateX(-50%);
   color: var(--CtaColor);
   opacity: 0.1;
 }
@@ -853,7 +855,8 @@ Projects Page
   font-family: var(--CtaFonts);
   font-weight: 400;
   top: 2%;
-  left: 2%;
+  left: 50%;
+  transform: translateX(-50%);
   color: var(--CtaColor);
   opacity: 0.1;
 }
