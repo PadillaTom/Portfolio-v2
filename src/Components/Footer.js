@@ -11,28 +11,30 @@ const Footer = () => {
             <div className='contact-text'>
               <h2>Let's work together!</h2>
             </div>
-            <div className='contact-social'>
-              <a
-                href='https://github.com/PadillaTom'
-                rel='noreferrer'
-                target='_blank'
-              >
-                <AiFillGithub></AiFillGithub>
-              </a>
-              <a
-                href='https://www.linkedin.com/in/padillatom/'
-                rel='noreferrer'
-                target='_blank'
-              >
-                <AiFillLinkedin></AiFillLinkedin>
+            <div className='contact-social-container'>
+              <div className='contact-social'>
+                <a
+                  href='https://github.com/PadillaTom'
+                  rel='noreferrer'
+                  target='_blank'
+                >
+                  <AiFillGithub></AiFillGithub>
+                </a>
+                <a
+                  href='https://www.linkedin.com/in/padillatom/'
+                  rel='noreferrer'
+                  target='_blank'
+                >
+                  <AiFillLinkedin></AiFillLinkedin>
+                </a>
+              </div>
+              <a href='tel:+41794002693'>
+                <div className='social-phone'>
+                  <AiFillPhone></AiFillPhone>
+                  <p>+41 79 400 26 93</p>
+                </div>
               </a>
             </div>
-            <a href='tel:+41794002693'>
-              <div className='social-phone'>
-                <AiFillPhone></AiFillPhone>
-                <p>+41 79 400 26 93</p>
-              </div>
-            </a>
           </div>
         </div>
         <div className='footer-bot'>
