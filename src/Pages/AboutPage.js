@@ -7,6 +7,7 @@ const AboutPage = () => {
 
   useEffect(() => {
     tl.from('.about-title', 0.8, {
+      delay: 0.5,
       scale: 1.5,
     })
       .from('.about-info-container', 1, {

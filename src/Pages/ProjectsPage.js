@@ -18,15 +18,16 @@ const ProjectsPage = () => {
   // Animations:
   useEffect(() => {
     tl.from('.projPage-title', 0.8, {
+      delay: 0.5,
       scale: 1.5,
     }).from('.projPage-proj-container', 1, {
       y: 600,
       ease: 'Expo.easeOut',
     });
     gsap.utils.toArray('.single-pp-container').forEach((item) => {
-      tl.from(item, 0.8, {
+      tl.from(item, 0.4, {
         opacity: 0,
-        scale: 2.5,
+        scale: 2,
       });
     });
   }, [tl]);

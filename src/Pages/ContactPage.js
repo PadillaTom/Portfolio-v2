@@ -13,6 +13,7 @@ const ContactPage = () => {
 
   useEffect(() => {
     tl.from('.cont-title', 0.8, {
+      delay: 0.5,
       scale: 1.5,
     })
       .from('.cont-info-container', 1, {

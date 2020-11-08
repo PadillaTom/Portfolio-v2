@@ -10,8 +10,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Homepage = (projComp) => {
   const tl = gsap.timeline();
-  const projRef = React.useRef(null);
-  console.log(projRef);
 
   useEffect(() => {
     // :::::::::::: Animations ::::::::::::::::
@@ -72,6 +70,8 @@ const Homepage = (projComp) => {
           <p>Tomas Padilla</p>
         </div>
         <a href='mailto:padillatomasagustin@gmail.com'>
+          <button className='mobile-cta'>Get in Touch!</button>
+
           <div className='home-cta'>
             <div className='cta-elements-container'>
               <div className='cta-circle'></div>
