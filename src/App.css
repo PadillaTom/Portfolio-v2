@@ -442,6 +442,7 @@ About
   }
   /* Info */
   .about-info {
+    max-width: 1300px;
     font-size: 1.2rem;
     letter-spacing: 1.7px;
   }
@@ -627,6 +628,7 @@ Contact
   .info-container {
     width: 50%;
     margin: 0 auto;
+    max-width: 1300px;
   }
   /* Left */
   .contact-info {
@@ -837,6 +839,11 @@ Projects
 
 /* -----> Desktop <------ */
 @media screen and (min-width: 992px) {
+  /* Hover Cancel */
+  .mobile-overlay {
+    visibility: hidden;
+  }
+  /* Projects: */
   .proj-sect {
     min-height: 100vh;
     margin: 0 auto;
@@ -844,8 +851,6 @@ Projects
     padding-top: 5rem;
   }
   .single-project-container {
-    position: relative;
-    left: 10%;
     width: 75%;
     margin: 0rem auto;
     margin-top: 20rem;
@@ -857,8 +862,8 @@ Projects
     gap: 1rem;
   }
   .proj-img-container {
-    width: 32rem;
-    height: 20rem;
+    width: 100%;
+    height: 100%;
     box-shadow: 1px 1px 9px rgba(109, 109, 109, 0.487);
     border-radius: 0.4rem;
     justify-self: right;
@@ -871,6 +876,7 @@ Projects
     border-radius: 0.4rem;
   }
   .proj-info {
+    display: block;
     width: 70%;
     margin: 0 auto;
   }
@@ -881,20 +887,13 @@ Projects
     letter-spacing: 2px;
     font-weight: 200;
     color: var(--GrayColor);
-    position: absolute;
-    top: 3%;
-    left: 55%;
   }
   .proj-stack {
     padding: 1rem;
   }
   .stack-list {
-    position: absolute;
     display: flex;
     flex-direction: column;
-    position: absolute;
-    top: 25%;
-    left: 55%;
   }
   .stack-item {
     font-family: var(--TextsFont);
@@ -906,9 +905,6 @@ Projects
   .proj-links {
     width: 60%;
     display: flex;
-    position: absolute;
-    top: 60%;
-    left: 60%;
   }
   .proj-links > * {
     font-size: 2rem;
@@ -916,9 +912,6 @@ Projects
     cursor: pointer;
     transition: var(--MainTransition);
     margin-left: 2rem;
-  }
-  .proj-links > *:hover {
-    color: crimson;
   }
 }
 /* :::: :: End Projects ::::::::  */
@@ -1209,7 +1202,7 @@ Footer
   }
   .contact-social {
     position: absolute;
-    top: 52%;
+    top: 60%;
     right: 45%;
     transform: translateY(-50%);
   }
