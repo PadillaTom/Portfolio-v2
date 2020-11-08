@@ -335,7 +335,7 @@ About
 :::::::::::::::::::::::::::::::::::::::
 */
 .about-sect {
-  min-height: 85vh;
+  min-height: 80vh;
   max-width: 100vw;
 }
 .about-container {
@@ -356,7 +356,7 @@ About
   box-shadow: 0px 0 12px rgba(0, 0, 0, 0.15);
   border-top-left-radius: 1.3rem;
   border-top-right-radius: 1.3rem;
-  padding-top: 1.7rem;
+  padding-top: 2rem;
   text-align: center;
 }
 /* Title */
@@ -375,7 +375,7 @@ About
   opacity: 0.1;
 }
 .about-info {
-  width: 85%;
+  width: 70%;
   margin: 0 auto;
   margin-top: 1.7rem;
   font-size: 1rem;
@@ -405,8 +405,7 @@ About
   background: transparent;
   padding: 0.5rem 0rem;
   width: 60%;
-  margin: 2rem auto;
-
+  margin: 6rem auto;
   cursor: pointer;
   transition: var(--MainTransition);
   font-family: var(--TitleFont);
@@ -622,7 +621,6 @@ Contact
     font-size: 10rem;
     letter-spacing: 6px;
     top: 4%;
-    left: 5.5%;
   }
   /* Infos */
   .info-container {
@@ -964,7 +962,6 @@ Projects Page
     font-size: 10rem;
     letter-spacing: 6px;
     top: 2%;
-    left: 3%;
   }
   /* Single Project Page */
   .all-single-pp-container {
