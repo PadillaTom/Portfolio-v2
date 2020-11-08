@@ -65,16 +65,16 @@ Navigation
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 2;
+  z-index: 1000;
   width: 100%;
 }
 .mobile-ham {
   position: fixed;
-  top: 2%;
+  top: 3%;
   left: 5%;
-  transform: translate(-5%, -2%);
-  z-index: 2;
-  font-size: 1.3rem;
+  transform: translate(-5%, -3%);
+  z-index: 1000;
+  font-size: 2rem;
   cursor: pointer;
   transition: var(--MainTransition);
 }
@@ -88,15 +88,16 @@ Navigation
   height: 100vh;
   position: fixed;
   transition: var(--MainTransition);
+  z-index: 999;
 }
 .sidebar-close {
   color: crimson;
   position: fixed;
-  top: 2%;
+  top: 3%;
   left: 5%;
-  transform: translate(-5%, -2%);
-  z-index: 2;
-  font-size: 1.3rem;
+  transform: translate(-5%, -3%);
+  z-index: 1000;
+  font-size: 2rem;
   cursor: pointer;
   transition: var(--MainTransition);
 }
@@ -729,6 +730,103 @@ Contact
 Projects
 :::::::::::::::::::::::::::::::::::::::
 */
+.proj-sect {
+  min-height: 100vh;
+  max-width: 100vw;
+  margin: 0 auto;
+  padding-top: 5rem;
+}
+.single-project-container {
+  width: 100%;
+  text-align: center;
+  margin: 10rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.proj-img-container {
+  width: 100%;
+  height: 25rem;
+  box-shadow: 1px 1px 9px rgba(109, 109, 109, 0.487);
+  border-radius: 0.2rem;
+  position: relative;
+}
+.mobile-overlay {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+  z-index: 2;
+}
+.single-project-container:hover .mobile-overlay {
+  display: block;
+}
+.proj-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.4rem;
+}
+.proj-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  width: 90%;
+  margin: 0 auto;
+}
+.proj-name {
+  font-family: var(--TitleFont);
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  font-weight: 400;
+  white-space: nowrap;
+  color: black;
+}
+.proj-stack {
+  padding: 0.5rem;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.stack-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.stack-item {
+  font-family: var(--TextsFont);
+  font-size: 1rem;
+  color: crimson;
+  margin: 0.3rem 0.4rem;
+  white-space: nowrap;
+}
+.proj-links {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.proj-links > * {
+  margin: 0 auto;
+  font-size: 2.8rem;
+  margin-top: 2rem;
+  cursor: pointer;
+  transition: var(--MainTransition);
+}
+.proj-links > *:hover {
+  color: crimson;
+}
 
 /* -----> Desktop <------ */
 @media screen and (min-width: 992px) {

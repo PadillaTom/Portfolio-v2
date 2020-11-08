@@ -19,6 +19,7 @@ const Projects = () => {
         {/* Peruvian Chef */}
         <div className='single-project-container'>
           <div className='proj-img-container'>
+            <div className='mobile-overlay'></div>
             <img src={Peru} alt='projimg' className='proj-img' />
           </div>
           <div className='proj-info'>
@@ -42,6 +43,7 @@ const Projects = () => {
         {/* RTS */}
         <div className='single-project-container'>
           <div className='proj-img-container'>
+            <div className='mobile-overlay'></div>
             <img src={Rts} alt='projimg' className='proj-img' />
           </div>
           <div className='proj-info'>
@@ -65,6 +67,7 @@ const Projects = () => {
         {/* Music Store */}
         <div className='single-project-container'>
           <div className='proj-img-container'>
+            <div className='mobile-overlay'></div>
             <img src={Music} alt='projimg' className='proj-img' />
           </div>
           <div className='proj-info'>
@@ -88,6 +91,7 @@ const Projects = () => {
         {/* RTS */}
         <div className='single-project-container'>
           <div className='proj-img-container'>
+            <div className='mobile-overlay'></div>
             <img src={Nasa} alt='projimg' className='proj-img' />
           </div>
           <div className='proj-info'>
@@ -110,6 +114,7 @@ const Projects = () => {
         {/* Nyus */}
         <div className='single-project-container'>
           <div className='proj-img-container'>
+            <div className='mobile-overlay'></div>
             <img src={Nyus} alt='projimg' className='proj-img' />
           </div>
           <div className='proj-info'>
@@ -132,6 +137,7 @@ const Projects = () => {
         {/* Flix Tribute */}
         <div className='single-project-container'>
           <div className='proj-img-container'>
+            <div className='mobile-overlay'></div>
             <img src={Flix} alt='projimg' className='proj-img' />
           </div>
           <div className='proj-info'>
