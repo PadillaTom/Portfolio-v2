@@ -15,6 +15,10 @@ const Navigation = () => {
 
   // Scrolls:
   useEffect(() => {
+    gsap.from('.mobile-ham', 0.5, {
+      scale: 0,
+      ease: 'Back.easeOut',
+    });
     tl.from('.desktop-link', 1, {
       delay: 1.5,
       x: -500,

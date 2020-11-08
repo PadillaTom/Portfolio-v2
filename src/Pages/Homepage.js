@@ -8,7 +8,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 gsap.registerPlugin(ScrollTrigger);
 
-const Homepage = (projComp) => {
+const Homepage = () => {
   const tl = gsap.timeline();
 
   useEffect(() => {
@@ -29,6 +29,10 @@ const Homepage = (projComp) => {
         opacity: 0,
         scale: 0.9,
         ease: 'circ.out',
+      })
+      .from('.mobile-cta', 0.7, {
+        opacity: 0,
+        y: -25,
       })
       .from(
         '.home-bg-container',
@@ -71,7 +75,6 @@ const Homepage = (projComp) => {
         </div>
         <a href='mailto:padillatomasagustin@gmail.com'>
           <button className='mobile-cta'>Get in Touch!</button>
-
           <div className='home-cta'>
             <div className='cta-elements-container'>
               <div className='cta-circle'></div>

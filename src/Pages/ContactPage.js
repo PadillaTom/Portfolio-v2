@@ -126,7 +126,7 @@ const ContactPage = () => {
                   <div className='textarea'>
                     <textarea
                       placeholder='Your Message...'
-                      rows='10'
+                      rows='7'
                       className='form-message'
                     ></textarea>
                   </div>

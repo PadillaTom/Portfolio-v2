@@ -335,7 +335,7 @@ About
 :::::::::::::::::::::::::::::::::::::::
 */
 .about-sect {
-  min-height: 80vh;
+  min-height: 85vh;
   max-width: 100vw;
 }
 .about-container {
@@ -885,7 +885,7 @@ Projects Page
 /* Image */
 .pp-img-container {
   width: 100%;
-  height: 85%;
+  height: 100%;
 }
 .pp-img {
   width: 100%;
