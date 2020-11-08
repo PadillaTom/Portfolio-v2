@@ -352,11 +352,11 @@ About
   position: relative;
   background: white;
   width: 100%;
-  min-height: 70vh;
+  min-height: 65vh;
   box-shadow: 0px 0 12px rgba(0, 0, 0, 0.15);
   border-top-left-radius: 1.3rem;
   border-top-right-radius: 1.3rem;
-  padding-top: 2rem;
+  padding-top: 1.7rem;
   text-align: center;
 }
 /* Title */
@@ -377,7 +377,7 @@ About
 .about-info {
   width: 85%;
   margin: 0 auto;
-  margin-top: 2rem;
+  margin-top: 1.7rem;
   font-size: 1rem;
   font-family: var(--MainFont);
   letter-spacing: 1.3px;
@@ -406,7 +406,7 @@ About
   padding: 0.5rem 0rem;
   width: 60%;
   margin: 2rem auto;
-  margin-bottom: 2rem;
+
   cursor: pointer;
   transition: var(--MainTransition);
   font-family: var(--TitleFont);
@@ -509,6 +509,7 @@ Contact
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 /* TOP */
 .contact-info {
@@ -547,6 +548,9 @@ Contact
   width: 80%;
   margin: 0 auto;
 }
+.contact-form {
+  text-align: center;
+}
 .single-control input {
   border: none;
   outline: none;
@@ -579,19 +583,18 @@ Contact
   opacity: 0.7;
 }
 .form-submit {
-  position: absolute;
-  text-align: center;
   border: 2px solid black;
   outline: none;
   background: white;
+  width: 80%;
+  margin: 0 auto;
   margin-top: 2rem;
-  left: 50%;
-  transform: translateX(-50%);
+  text-align: center;
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-family: var(--TitleFont);
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 0rem;
   cursor: pointer;
   transition: var(--MainTransition);
 }
@@ -1011,6 +1014,8 @@ Footer
 */
 .footer-sect {
   width: 100%;
+  position: relative;
+  bottom: 0;
 }
 .footer-top {
   height: 10rem;
