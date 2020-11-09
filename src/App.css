@@ -96,7 +96,7 @@ Navigation
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 6rem;
+  padding-top: 3.75rem;
 }
 .sidebar-close {
   color: crimson;
