@@ -980,6 +980,19 @@ Projects
   color: crimson;
 }
 
+/* -----> Tablet <------ */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .all-proj-container {
+    padding-top: 7rem;
+  }
+  .proj-img-container {
+    height: 30rem;
+  }
+  .single-project-container {
+    margin: 9.5rem 0rem;
+  }
+}
+
 /* -----> Desktop <------ */
 @media screen and (min-width: 992px) {
   .all-proj-container {
@@ -1158,6 +1171,28 @@ Projects Page
     letter-spacing: 6px;
     top: 1.7%;
   }
+  .all-single-pp-container {
+    width: 70%;
+  }
+  .pp-name {
+    font-size: 1.7rem;
+  }
+  .pp-stack-item {
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+  }
+  .pp-desc {
+    font-size: 1.3rem;
+    letter-spacing: 1.5px;
+  }
+  .pp-links {
+    margin-top: 2.5rem;
+  }
+  .pp-links a {
+    font-size: 3.5rem;
+    margin-left: 1.5rem;
+  }
 }
 
 /* -----> Desktop <------ */
@@ -1174,7 +1209,7 @@ Projects Page
   .projPage-title {
     font-size: 10rem;
     letter-spacing: 6px;
-    top: 2%;
+    top: 0%;
   }
   /* Single Project Page */
   .all-single-pp-container {
@@ -1286,6 +1321,28 @@ Footer
   letter-spacing: 1.2px;
   color: var(--FontGrayColor);
   font-size: 0.9rem;
+}
+
+/* -----> Tablet <------ */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .contact-text {
+    padding: 2rem 0rem;
+    font-size: 1.5rem;
+  }
+  .contact-social {
+    padding-bottom: 1.5rem;
+    font-size: 2rem;
+  }
+  .social-phone p {
+    font-size: 1.4rem;
+  }
+  .social-phone {
+    font-size: 2rem;
+  }
+  .footer-bot p {
+    font-size: 1.5rem;
+    padding: 0.7rem 0rem;
+  }
 }
 
 /* -----> Desktop <------ */
