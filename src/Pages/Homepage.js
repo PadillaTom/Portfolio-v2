@@ -43,9 +43,9 @@ const Homepage = () => {
         },
         1
       )
-      .from('.cta-elements-container', 0.5, {
+      .from('.cta-elements-container', 0.3, {
         scale: 0,
-        delay: 0.3,
+        delay: 0.7,
         ease: 'Bounce.easeOut',
       });
   }, [tl]);

@@ -749,10 +749,14 @@ Projects
   margin: 0 auto;
   padding-top: 5rem;
 }
+.all-proj-container {
+  width: 100%;
+  margin: 0 auto;
+}
 .single-project-container {
   width: 100%;
   text-align: center;
-  margin: 10rem auto;
+  margin: 8rem auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -850,79 +854,34 @@ Projects
 
 /* -----> Desktop <------ */
 @media screen and (min-width: 992px) {
-  /* Hover Cancel */
-  .mobile-overlay {
-    visibility: hidden;
-  }
-  /* Projects: */
-  .proj-sect {
-    min-height: 100vh;
+  .all-proj-container {
+    max-width: 1300px;
+    width: 60%;
     margin: 0 auto;
-    position: relative;
-    padding-top: 5rem;
-  }
-  .single-project-container {
-    width: 75%;
-    margin: 0rem auto;
-    margin-top: 20rem;
-    margin-bottom: 25rem;
-    margin-left: 5.5rem;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    place-items: center;
-    gap: 1rem;
   }
   .proj-img-container {
-    width: 100%;
-    height: 100%;
-    box-shadow: 1px 1px 9px rgba(109, 109, 109, 0.487);
-    border-radius: 0.4rem;
-    justify-self: right;
-    margin-left: -1rem;
-  }
-  .proj-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 0.4rem;
+    height: 30rem;
   }
   .proj-info {
-    display: block;
     width: 70%;
     margin: 0 auto;
   }
   .proj-name {
-    font-family: var(--TitleFont);
-    font-size: 1.5rem;
-    text-transform: uppercase;
+    font-size: 2.5rem;
     letter-spacing: 2px;
-    font-weight: 200;
-    color: var(--GrayColor);
   }
   .proj-stack {
-    padding: 1rem;
-  }
-  .stack-list {
-    display: flex;
-    flex-direction: column;
+    width: 60%;
   }
   .stack-item {
-    font-family: var(--TextsFont);
-    letter-spacing: 1px;
-    font-size: 1rem;
-    color: var(--FontGrayColor);
-    margin: 0.3rem 0.7rem;
+    font-size: 1.3rem;
+    font-weight: 600;
   }
   .proj-links {
-    width: 60%;
-    display: flex;
+    margin-top: 3rem;
   }
   .proj-links > * {
-    font-size: 2rem;
-    margin-top: 2.5rem;
-    cursor: pointer;
-    transition: var(--MainTransition);
-    margin-left: 2rem;
+    font-size: 4rem;
   }
 }
 /* :::: :: End Projects ::::::::  */
