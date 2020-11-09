@@ -22,7 +22,7 @@ const Projects = () => {
         scrollTrigger: {
           trigger: item,
           start: 'top bottom',
-          end: 'center+=115 top',
+          end: 'center top',
           toggleActions: 'play reverse play reset',
         },
       });
