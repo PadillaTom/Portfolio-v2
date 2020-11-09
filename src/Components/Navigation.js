@@ -180,9 +180,6 @@ const Navigation = () => {
               <p>Projects</p>
             </Link>
           </li>
-          <li className='single-link cv-link'>
-            <p>Download CV</p>
-          </li>
         </ul>
       </nav>
     </React.Fragment>

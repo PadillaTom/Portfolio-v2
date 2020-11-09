@@ -47,16 +47,6 @@ const Homepage = () => {
         scale: 0,
         delay: 0.3,
         ease: 'Bounce.easeOut',
-      })
-      .to('.cta-elements-container', {
-        y: 405,
-        scrollTrigger: {
-          trigger: '.cta-elements-container',
-          pin: true,
-          scrub: 3,
-          start: 'top top+=95',
-          end: 'top top-=5000',
-        },
       });
   }, [tl]);
 

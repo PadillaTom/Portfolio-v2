@@ -99,8 +99,8 @@ const ContactPage = () => {
                   </div>
                 </a>
               </div>
-              <h4 className='say-something'>Say something!</h4>
               <div className='contact-form-container'>
+                <h4 className='say-something'>Say something!</h4>
                 <form className='contact-form'>
                   <div className='single-control'>
                     <input type='text' placeholder='Name' />

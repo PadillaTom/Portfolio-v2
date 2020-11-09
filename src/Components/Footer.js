@@ -1,6 +1,11 @@
 import React from 'react';
 // Icons:
-import { AiFillLinkedin, AiFillGithub, AiFillPhone } from 'react-icons/ai';
+import {
+  AiFillLinkedin,
+  AiFillGithub,
+  AiFillPhone,
+  AiOutlineMail,
+} from 'react-icons/ai';
 
 const Footer = () => {
   return (
@@ -26,6 +31,9 @@ const Footer = () => {
                   target='_blank'
                 >
                   <AiFillLinkedin></AiFillLinkedin>
+                </a>
+                <a href='mailto: padillatomasagustin@gmail.com'>
+                  <AiOutlineMail></AiOutlineMail>
                 </a>
               </div>
               <a href='tel:+41794002693'>

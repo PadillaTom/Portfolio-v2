@@ -555,20 +555,21 @@ Contact
 .single-info:hover {
   color: crimson;
 }
+/* Right */
 .say-something {
+  text-align: center;
   font-family: var(--MainFont);
-  font-size: 1.2rem;
-  letter-spacing: 1.5px;
+  font-size: 1.1rem;
+  letter-spacing: 2px;
   text-transform: uppercase;
   font-weight: 400;
   margin: 0 auto;
-  margin-top: 1.4rem;
-  margin-bottom: 0.7rem;
+  margin-bottom: 1.2rem;
 }
-/* Right */
 .contact-form-container {
   width: 80%;
   margin: 0 auto;
+  margin-top: 2.5rem;
 }
 .contact-form {
   text-align: center;
@@ -647,17 +648,14 @@ Contact
   }
   /* Infos */
   .info-container {
-    width: 50%;
-    margin: 0 auto;
     max-width: 1300px;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
   /* Left */
-  .contact-info {
-    position: absolute;
-    top: 45%;
-    left: 17%;
-    transform: translateY(-50%);
-  }
   .single-info {
     display: flex;
     margin: 2rem 0rem;
@@ -677,17 +675,9 @@ Contact
   }
   /* Right */
   .contact-form-container {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 20%;
-    width: unset;
-    margin: unset;
+    width: 60%;
   }
   .say-something {
-    position: absolute;
-    top: 10%;
-    right: 24%;
     font-family: var(--MainFont);
     font-size: 1.5rem;
     letter-spacing: 2px;
@@ -1199,37 +1189,36 @@ Footer
 @media screen and (min-width: 992px) {
   .footer-sect {
     width: 100%;
-    position: relative;
     bottom: 0;
   }
   .footer-top {
-    height: 10rem;
     width: 100%;
     background: rgb(235, 235, 235);
-    position: relative;
   }
   .contact-container {
-    width: 90%;
+    max-width: 1250px;
+    width: 85%;
     margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 2.5rem 0rem;
   }
   .contact-text {
-    position: absolute;
-    top: 50%;
-    left: 5%;
-    transform: translateY(-50%);
     font-family: var(--TitleFont);
     font-weight: 400;
     letter-spacing: 2.5px;
     color: var(--CtaColor);
+    white-space: nowrap;
   }
   .contact-social {
-    position: absolute;
-    top: 60%;
-    right: 45%;
-    transform: translateY(-50%);
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
   }
   .contact-social > * {
-    margin-left: 5rem;
     font-size: 2rem;
     cursor: pointer;
     transition: var(--MainTransition);
@@ -1238,10 +1227,6 @@ Footer
     color: crimson;
   }
   .social-phone {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 15%;
     display: flex;
     align-items: center;
     font-size: 2rem;
@@ -1252,25 +1237,20 @@ Footer
     font-size: 1.1rem;
     margin-left: 1rem;
     letter-spacing: 1.5px;
+    white-space: nowrap;
   }
   .social-phone:hover {
     color: crimson;
   }
   .footer-bot {
-    height: 2rem;
-    background: white;
     width: 100%;
+    background: white;
     text-align: center;
-    position: relative;
   }
   .footer-bot p {
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-family: var(--MainFont);
+    padding: 0.25rem;
     letter-spacing: 2px;
-    padding: 1rem;
+    font-family: var(--MainFont);
     color: var(--FontGrayColor);
   }
 }
