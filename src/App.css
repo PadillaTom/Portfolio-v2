@@ -539,9 +539,14 @@ About
 }
 /* -----> Desktop <------ */
 @media screen and (min-width: 992px) {
+  .about-sect {
+    min-height: 60vh;
+    width: 100%;
+  }
   .about-img {
     height: 38vh;
   }
+
   /* Title */
   .about-title {
     font-size: 10rem;
@@ -550,7 +555,7 @@ About
   }
   /* Info */
   .about-info {
-    max-width: 1300px;
+    width: 100%;
     font-size: 1.2rem;
     letter-spacing: 1.7px;
   }
