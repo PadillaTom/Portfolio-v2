@@ -715,7 +715,46 @@ Contact
   background: black;
   color: white;
 }
-
+/* -----> Tablet <------ */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .cont-sect {
+    min-height: 100vh;
+    width: 100%;
+  }
+  .cont-img {
+    height: 20vh;
+  }
+  .cont-title {
+    font-size: 5.5rem;
+    letter-spacing: 4.5px;
+    top: 6%;
+  }
+  .cont-info-center {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .info-container {
+    width: 90%;
+  }
+  .single-info {
+    font-size: 2.5rem;
+  }
+  .single-info p {
+    font-size: 1.3rem;
+    margin-left: 1rem;
+  }
+  .say-something {
+    font-size: 2rem;
+  }
+  .contact-form-container {
+    width: 95%;
+  }
+  .form-submit {
+    font-size: 1.4rem;
+  }
+}
 /* -----> Desktop <------ */
 @media screen and (min-width: 992px) {
   .cont-sect {
@@ -1101,12 +1140,28 @@ Projects Page
   color: crimson;
 }
 
-/* -----> Desktop <------ */
-@media screen and (min-width: 992px) {
+/* -----> Tablet <------ */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   .projPage-sect {
     min-height: 100vh;
     width: 100%;
   }
+  .projPage-img {
+    height: 20vh;
+  }
+  .projPage-proj-container {
+    min-height: 80vh;
+  }
+  /* Title */
+  .projPage-title {
+    font-size: 5.5rem;
+    letter-spacing: 6px;
+    top: 1.7%;
+  }
+}
+
+/* -----> Desktop <------ */
+@media screen and (min-width: 992px) {
   .projPage-img {
     height: 38vh;
   }

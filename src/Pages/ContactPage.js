@@ -60,63 +60,65 @@ const ContactPage = () => {
             <h2>Contact</h2>
           </div>
           <div className='cont-info-container'>
-            <div className='info-container'>
-              <div className='contact-info'>
-                {/* Github */}
-                <a
-                  href='https://github.com/PadillaTom'
-                  rel='noreferrer'
-                  target='_blank'
-                >
-                  <div className='single-info'>
-                    <AiFillGithub></AiFillGithub>
-                    <p>GitHub</p>
-                  </div>
-                </a>
-                {/* Linkedin */}
-                <a
-                  href='https://www.linkedin.com/in/padillatom/'
-                  target='_blank'
-                  rel='noreferrer'
-                >
-                  <div className='single-info'>
-                    <AiFillLinkedin></AiFillLinkedin>
-                    <p>Linkedin</p>
-                  </div>
-                </a>
-                {/* Email */}
-                <a href='mailto: padillatomasagustin@gmail.com'>
-                  <div className='single-info'>
-                    <AiOutlineMail></AiOutlineMail>
-                    <p>padillatomasagustin@gmail.com</p>
-                  </div>
-                </a>
-                {/* Phone */}
-                <a href='tel:+41794002693'>
-                  <div className='single-info'>
-                    <AiFillPhone></AiFillPhone>
-                    <p>+41 79 400 26 93</p>
-                  </div>
-                </a>
-              </div>
-              <div className='contact-form-container'>
-                <h4 className='say-something'>Say something!</h4>
-                <form className='contact-form'>
-                  <div className='single-control'>
-                    <input type='text' placeholder='Name' />
-                  </div>
-                  <div className='single-control'>
-                    <input type='email' placeholder='Your e-mail' />
-                  </div>
-                  <div className='textarea'>
-                    <textarea
-                      placeholder='Your Message...'
-                      rows='7'
-                      className='form-message'
-                    ></textarea>
-                  </div>
-                  <button className='form-submit'>Submit</button>
-                </form>
+            <div className='cont-info-center'>
+              <div className='info-container'>
+                <div className='contact-info'>
+                  {/* Github */}
+                  <a
+                    href='https://github.com/PadillaTom'
+                    rel='noreferrer'
+                    target='_blank'
+                  >
+                    <div className='single-info'>
+                      <AiFillGithub></AiFillGithub>
+                      <p>GitHub</p>
+                    </div>
+                  </a>
+                  {/* Linkedin */}
+                  <a
+                    href='https://www.linkedin.com/in/padillatom/'
+                    target='_blank'
+                    rel='noreferrer'
+                  >
+                    <div className='single-info'>
+                      <AiFillLinkedin></AiFillLinkedin>
+                      <p>Linkedin</p>
+                    </div>
+                  </a>
+                  {/* Email */}
+                  <a href='mailto: padillatomasagustin@gmail.com'>
+                    <div className='single-info'>
+                      <AiOutlineMail></AiOutlineMail>
+                      <p>padillatomasagustin@gmail.com</p>
+                    </div>
+                  </a>
+                  {/* Phone */}
+                  <a href='tel:+41794002693'>
+                    <div className='single-info'>
+                      <AiFillPhone></AiFillPhone>
+                      <p>+41 79 400 26 93</p>
+                    </div>
+                  </a>
+                </div>
+                <div className='contact-form-container'>
+                  <h4 className='say-something'>Say something!</h4>
+                  <form className='contact-form'>
+                    <div className='single-control'>
+                      <input type='text' placeholder='Name' />
+                    </div>
+                    <div className='single-control'>
+                      <input type='email' placeholder='Your e-mail' />
+                    </div>
+                    <div className='textarea'>
+                      <textarea
+                        placeholder='Your Message...'
+                        rows='7'
+                        className='form-message'
+                      ></textarea>
+                    </div>
+                    <button className='form-submit'>Submit</button>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
