@@ -60,7 +60,9 @@ const AboutPage = () => {
                 <br />
                 <p>
                   I invite you to see my
-                  <button className='proj-cta'>Projects.</button>
+                  <Link to='/projects'>
+                    <button className='proj-cta'>Projects.</button>
+                  </Link>
                 </p>
               </div>
               <div className='about-cta'>
