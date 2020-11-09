@@ -24,10 +24,10 @@ const AboutPage = () => {
         },
         1.4
       )
-      .from('.about-cta', 0.7, {
+      .from('.about-cta', 0.5, {
         opacity: 0,
         y: -25,
-        ease: 'Power4.easeOut',
+        ease: 'Power2.easeOut',
       });
   }, [tl]);
 

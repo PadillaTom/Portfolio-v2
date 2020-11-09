@@ -15,7 +15,7 @@ const Homepage = () => {
     // :::::::::::: Animations ::::::::::::::::
 
     tl.from('.home-text p', 1.5, {
-      scale: 3,
+      scale: 2.5,
       y: -150,
       delay: 0.6,
       ease: 'circ.out',
@@ -30,9 +30,9 @@ const Homepage = () => {
         scale: 0.9,
         ease: 'circ.out',
       })
-      .from('.mobile-cta', 0.7, {
-        opacity: 0,
-        y: -25,
+      .from('.mobile-cta', 0.4, {
+        scale: 0,
+        ease: 'Bounce.easeOut',
       })
       .from(
         '.home-bg-container',

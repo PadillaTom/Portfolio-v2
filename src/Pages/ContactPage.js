@@ -20,26 +20,11 @@ const ContactPage = () => {
         y: 600,
         ease: 'Expo.easeOut',
       })
-      .from(
-        '.cont-info',
-        0.8,
-        {
-          opacity: 0,
-          y: 15,
-          ease: 'Power4.easeOut',
-        },
-        1.4
-      )
-      .from(
-        '.contact-info',
-        0.8,
-        {
-          opacity: 0,
-          y: -25,
-          ease: 'Power4.easeOut',
-        },
-        1.4
-      )
+      .from('.info-container', 0.8, {
+        opacity: 0,
+        y: -25,
+        ease: 'Power4.easeOut',
+      })
       .from(
         '.say-something',
         0.8,
@@ -48,7 +33,7 @@ const ContactPage = () => {
           y: -25,
           ease: 'Power4.easeOut',
         },
-        1.4
+        1
       )
       .from(
         '.contact-form-container',

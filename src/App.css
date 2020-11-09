@@ -70,11 +70,11 @@ Navigation
 }
 .mobile-ham {
   position: fixed;
-  top: 3%;
-  left: 5%;
+  top: 5%;
+  left: 7%;
   transform: translate(-5%, -3%);
   z-index: 1000;
-  font-size: 2rem;
+  font-size: 2.1rem;
   cursor: pointer;
   transition: var(--MainTransition);
 }
@@ -83,40 +83,62 @@ Navigation
 }
 /* Sidebar */
 .sidebar {
-  background: var(--CtaColor);
+  transform: translateX(-100%);
+}
+.show-sidebar {
+  transform: translateX(0);
+  position: fixed;
   width: 100vw;
   height: 100vh;
-  position: fixed;
-  transition: var(--MainTransition);
+  background: white;
   z-index: 999;
+  transition: var(--MainTransition);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 6rem;
 }
 .sidebar-close {
   color: crimson;
   position: fixed;
-  top: 3%;
-  left: 5%;
+  top: 5%;
+  left: 7%;
   transform: translate(-5%, -3%);
   z-index: 1000;
-  font-size: 2rem;
+  font-size: 2.2rem;
   cursor: pointer;
   transition: var(--MainTransition);
 }
 .side-links {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 100%;
-  height: 50%;
+  width: 90%;
+  height: 90%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
-  color: white;
-  font-family: var(--TitleFont);
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  font-weight: 400;
 }
+.single-link p {
+  color: var(--CtaColor);
+  text-transform: capitalize;
+  font-family: var(--CtaFonts);
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  font-weight: 400;
+  white-space: nowrap;
+}
+.mobile-social {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+}
+.single-social-m {
+  font-size: 2.5rem;
+}
+.single-social-m:hover {
+  color: crimson;
+}
+
 /* -----> Desktop <------ */
 @media screen and (min-width: 800px) {
   .mobile-nav {
@@ -506,7 +528,8 @@ Contact
   opacity: 0.1;
 }
 .info-container {
-  width: 80%;
+  max-width: 1300px;
+  width: 75%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -963,6 +986,7 @@ Projects Page
 }
 /* Single Projects */
 .all-single-pp-container {
+  max-width: 1300px;
   width: 78%;
   margin: 0 auto;
   display: flex;
@@ -1236,7 +1260,7 @@ Footer
   }
   .footer-bot {
     height: 2rem;
-    background: var(--BgColor);
+    background: white;
     width: 100%;
     text-align: center;
     position: relative;

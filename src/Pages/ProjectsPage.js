@@ -27,7 +27,7 @@ const ProjectsPage = () => {
     gsap.utils.toArray('.single-pp-container').forEach((item) => {
       tl.from(item, 0.4, {
         opacity: 0,
-        scale: 2,
+        scale: 1.3,
       });
     });
   }, [tl]);
