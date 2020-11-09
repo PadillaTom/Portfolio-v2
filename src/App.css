@@ -901,6 +901,7 @@ Projects
   transition: var(--MainTransition);
 }
 .mobile-overlay {
+  border-radius: 0.2rem;
   display: none;
   width: 100%;
   height: 100%;
