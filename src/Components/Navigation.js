@@ -30,12 +30,12 @@ const Navigation = () => {
           ease: 'Power4.Out',
         });
       });
+      gsap.from('.mobile-social', 0.2, {
+        delay: 1,
+        scale: 0,
+        ease: 'Power4.Out',
+      });
     }
-    gsap.from('.mobile-social', 0.2, {
-      delay: 1,
-      scale: 0,
-      ease: 'Power4.Out',
-    });
     tl.from('.desktop-link', 1, {
       delay: 1.5,
       x: -500,

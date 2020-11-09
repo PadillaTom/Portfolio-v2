@@ -62,11 +62,9 @@ Navigation
   display: none;
 }
 .mobile-nav {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
-  z-index: 1000;
-  width: 100%;
 }
 .mobile-ham {
   position: fixed;
@@ -96,7 +94,7 @@ Navigation
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 2rem;
+  padding-top: 0.5rem;
 }
 .sidebar-close {
   color: crimson;
@@ -133,7 +131,7 @@ Navigation
   width: 80%;
 }
 .single-social-m {
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 .single-social-m:hover {
   color: crimson;
