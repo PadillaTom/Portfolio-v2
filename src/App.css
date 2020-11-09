@@ -190,7 +190,6 @@ Homepage
   height: 90vh;
   position: relative;
   background: var(--BgColor);
-  overflow-x: hidden;
 }
 /* Image */
 .home-bg-overlay {
