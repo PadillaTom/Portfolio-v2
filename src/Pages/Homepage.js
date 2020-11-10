@@ -45,7 +45,7 @@ const Homepage = () => {
       )
       .from('.cta-elements-container', 0.3, {
         scale: 0,
-        delay: 0.7,
+        delay: 0.4,
         ease: 'Bounce.easeOut',
       });
   }, [tl]);
