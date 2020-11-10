@@ -471,12 +471,19 @@ About
   position: relative;
   background: white;
   width: 100%;
-  min-height: 82vh;
+  min-height: 80vh;
   box-shadow: 0px 0 12px rgba(0, 0, 0, 0.15);
   border-top-left-radius: 1.3rem;
   border-top-right-radius: 1.3rem;
   padding-top: 2rem;
   text-align: center;
+}
+.about-info-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
 }
 /* Title */
 .about-title {
@@ -524,7 +531,7 @@ About
   background: transparent;
   padding: 0.5rem 0rem;
   width: 60%;
-  margin: 6rem auto;
+  margin: 4rem auto;
   cursor: pointer;
   transition: var(--MainTransition);
   font-family: var(--TitleFont);
@@ -552,10 +559,6 @@ About
     letter-spacing: 4.5px;
     top: 6%;
   }
-  .about-info-center {
-    position: absolute;
-    top: 15%;
-  }
   .about-info {
     max-width: 1300px;
     font-size: 1.5rem;
@@ -573,7 +576,7 @@ About
   .about-cta {
     width: 40%;
     bottom: 11%;
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -612,6 +615,13 @@ About
     bottom: 11%;
   }
 }
+
+/* 1200 el tema es la Altura */
+/* @media screen and (min-width: 1200px) {
+  .about-img {
+    height: 30vh;
+  }
+} */
 
 /* Bigger Screens 1400px */
 @media screen and (min-width: 1400px) {
@@ -942,6 +952,13 @@ Contact
     color: white;
   }
 }
+
+/* 1200 Tema es la ALTURA */
+/* @media screen and (min-width: 1200px) {
+  .cont-img {
+    height: 30vh;
+  }
+} */
 
 /* Bigger Screens 1400px */
 @media screen and (min-width: 1400px) {
@@ -1389,6 +1406,19 @@ Projects Page
     margin-left: 1.5rem;
   }
 }
+
+/* 1200 El tema es la ALTURA */
+/* @media screen and (min-width: 1250px) {
+  .projPage-img {
+    height: 30vh;
+  } */
+/* Title */
+/* .projPage-title {
+    font-size: 10rem;
+    letter-spacing: 6px;
+    top: 2.5%;
+  }
+} */
 
 /* Bigger Screens 1400px */
 @media screen and (min-width: 1400px) {
