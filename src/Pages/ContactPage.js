@@ -102,21 +102,32 @@ const ContactPage = () => {
                 </div>
                 <div className='contact-form-container'>
                   <h4 className='say-something'>Say something!</h4>
-                  <form className='contact-form'>
+                  <form
+                    className='contact-form'
+                    action='https://formspree.io/f/mleodora'
+                    method='POST'
+                  >
                     <div className='single-control'>
-                      <input type='text' placeholder='Name' />
+                      <input type='text' name='Name' placeholder='Name' />
                     </div>
                     <div className='single-control'>
-                      <input type='email' placeholder='Your e-mail' />
+                      <input
+                        type='email'
+                        name='Email'
+                        placeholder='Your e-mail'
+                      />
                     </div>
                     <div className='textarea'>
                       <textarea
                         placeholder='Your Message...'
                         rows='7'
+                        name='Message'
                         className='form-message'
                       ></textarea>
                     </div>
-                    <button className='form-submit'>Submit</button>
+                    <button className='form-submit' type='submit' value='Send'>
+                      Submit
+                    </button>
                   </form>
                 </div>
               </div>
